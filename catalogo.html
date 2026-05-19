@@ -5,80 +5,117 @@
     <title>Productos - Catálogo</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    color: #333;
-    background-image: url(file:///C|/Users/LAB2-PC26/Documents/55.png);
-}
-        
-        /* Menú básico */
-        nav { background: #eee; padding: 10px; text-align: center; border-bottom: 1px solid #ccc; }
-        nav a { margin: 0 10px; text-decoration: none; color: #000; font-size: 14px; }
-
-        /* Banner de foto concreto */
-        .banner-min { 
-            background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=800') center;
-            background-size: cover;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 1px 1px 3px #000;
+            font-family: Arial, sans-serif;
+            background-color: #FFF9E6; /* Fondo amarillo claro */
+            margin: 0;
+            text-align: center;
         }
-
-        /* Listado sencillo */
-        .tabla-productos { width: 90%; margin: 20px auto; border-collapse: collapse; }
-        .tabla-productos td { padding: 10px; border-bottom: 1px solid #eee; }
-        .img-prod { width: 50px; height: 50px; object-fit: cover; border-radius: 4px; }
-        .precio { font-weight: bold; color: #27ae60; }
-        
-        button { cursor: pointer; background: #f4f4f4; border: 1px solid #ccc; padding: 5px 10px; }
-        
-        footer { text-align: center; font-size: 12px; padding: 20px; color: #666; }
+        h1, h2 {
+            color: #FF4081;
+        }
+        nav {
+            background-color: #FF4081;
+            padding: 15px;
+        }
+        nav a {
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #FFF176;
+        }
+        /* REQUISITO: Estilo de tabla muy simple */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #FFFFFF;
+        }
+        th {
+            background-color: #FF4081;
+            color: white;
+            padding: 10px;
+        }
+        td {
+            border: 1px solid #FF4081;
+            padding: 10px;
+        }
+        /* Cuadros para las 2 publicidades requeridas */
+        .caja-publicidad1 {
+            background-color: #FFF176;
+            border: 2px dashed #FF4081;
+            display: inline-block;
+            width: 40%;
+            margin: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .caja-publicidad2 {
+            background-color: #FF4081;
+            color: white;
+            border: 2px dashed #FFF176;
+            display: inline-block;
+            width: 40%;
+            margin: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
 
-<nav>
-       <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="oferta.html">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-		<a href="nosotros.html">NOSOTROS</a>
-        <a href="ubicacion.html">UBICACION</a>
-	
+    <nav>
+        <a href="index.html">INICIO</a> | 
+        <a href="catalogo.html">PRODUCTOS</a> | 
+        <a href="contacto.html">CONTACTO</a> | 
+        <a href="nosotros.html">NOSOTROS</a> | 
+        <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
-  
-        <h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CATÁLOGO</h1>
-  
+    <h1>NUESTRO CATÁLOGO DE PRODUCTOS</h1>
 
-    <table class="tabla-productos">
-       
-        <tr>
-            <td><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=100" class="img-prod"></td>
-            <td><strong>Tomate Bola</strong><br><small>Por kilo</small></td>
-            <td class="precio">$35.00</td>
-            <td><button>Agregar</button></td>
-      </tr>
-        <tr>
-            <td><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=100" class="img-prod"></td>
-            <td><strong>Leche Litro</strong><br><small>Envase 1L</small></td>
-            <td class="precio">$24.00</td>
-            <td><button>Agregar</button></td>
-        </tr>
-        <tr>
-            <td><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=100" class="img-prod"></td>
-            <td><strong>Pollo Entero</strong><br><small>Por kilo</small></td>
-            <td class="precio">$85.00</td>
-            <td><button>Agregar</button></td>
-        </tr>
-</table>
+    <table>
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=80" width="80" alt="Tomate"></td>
+                <td><b>Tomate Bola</b><br>Por Kilo</td>
+                <td style="color: #FF4081; font-weight: bold;">$35.00</td>
+                <td><button style="background-color: #FFF176; border: 1px solid #FF4081; cursor: pointer;">Comprar</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=80" width="80" alt="Leche"></td>
+                <td><b>Leche Litro</b><br>Envase 1L</td>
+                <td style="color: #FF4081; font-weight: bold;">$24.00</td>
+                <td><button style="background-color: #FFF176; border: 1px solid #FF4081; cursor: pointer;">Comprar</button></td>
+            </tr>
+        </tbody>
+    </table>
 
-<footer>
-  &copy; 2026 Catálogo de Supermercado
-    </footer>
+    <h2>PROMOCIONES EXCLUSIVAS</h2>
+    
+    <div class="caja-publicidad1">
+        <h3>ANUNCIO PUBLICITARIO 1</h3>
+        <p>¡Llegó el pan dulce calientito! Compra uno y llévate el segundo a mitad de precio de 6 PM a 8 PM.</p>
+    </div>
+
+    <div class="caja-publicidad2">
+        <h3>ANUNCIO PUBLICITARIO 2</h3>
+        <p>¡Saca tu tarjeta de cliente Full Market! Acumula el 5% en puntos de todas tus compras escolares.</p>
+    </div>
+
+    <p style="background-color: #FF4081; color: white; padding: 10px; margin-top: 30px; margin-bottom: 0;">
+        &copy; 2026 Catálogo Escolar.
+    </p>
 
 </body>
 </html>
