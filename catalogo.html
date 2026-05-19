@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>Productos - Catálogo</title>
     <style>
-        /* Estilo muy sencillo de preparatoria en rosa y amarillo */
+        /* Estilo básico de preparatoria en rosa y amarillo */
         body {
             font-family: Arial, sans-serif;
             background-color: #FFF9E6; /* Fondo amarillo claro */
             margin: 0;
             text-align: center;
         }
-        h1 {
-            color: #FF4081; /* Título color rosa */
+        h1, h2 {
+            color: #FF4081; /* Títulos color rosa */
             margin-top: 20px;
         }
         /* Menú unificado */
@@ -29,12 +29,12 @@
         nav a:hover {
             color: #FFF176; /* Cambia a amarillo al pasar el ratón */
         }
-        /* REQUISITO: Tabla clásica de artículos */
+        /* REQUISITO: Tabla clásica sin columna de acción */
         table {
-            width: 85%;
+            width: 75%;
             margin: 30px auto;
             border-collapse: collapse;
-            background-color: #FFFFFF; /* Fondo blanco para leer bien */
+            background-color: #FFFFFF; /* Fondo blanco */
         }
         th {
             background-color: #FF4081; /* Encabezado rosa */
@@ -46,19 +46,16 @@
             padding: 12px;
             vertical-align: middle;
         }
-        /* Botón simple de compra */
-        .btn-comprar {
-            background-color: #FFF176; /* Fondo amarillo */
-            color: #333;
-            font-weight: bold;
-            border: 1px solid #FF4081;
-            padding: 6px 12px;
-            cursor: pointer;
-            border-radius: 4px;
+        /* Contenedor para las fotos de publicidad */
+        .publicidad-fotos {
+            margin: 30px auto;
         }
-        .btn-comprar:hover {
-            background-color: #FF4081;
-            color: white;
+        .publicidad-fotos img {
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+            margin: 10px;
+            max-width: 300px;
+            height: auto;
         }
     </style>
 </head>
@@ -80,7 +77,6 @@
                 <th>Imagen</th>
                 <th>Producto</th>
                 <th>Precio</th>
-                <th>Acción</th>
             </tr>
         </thead>
         <tbody>
@@ -88,36 +84,48 @@
                 <td><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=80" width="80" alt="Tomate"></td>
                 <td><b>Tomate Bola</b><br><small>Por Kilo</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$35.00</td>
-                <td><button class="btn-comprar">Comprar</button></td>
             </tr>
             <tr>
                 <td><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=80" width="80" alt="Leche"></td>
                 <td><b>Leche Litro</b><br><small>Envase 1L</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$24.00</td>
-                <td><button class="btn-comprar">Comprar</button></td>
             </tr>
             <tr>
                 <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=80" width="80" alt="Pan"></td>
                 <td><b>Pan de Caja</b><br><small>Paquete Grande</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$45.00</td>
-                <td><button class="btn-comprar">Comprar</button></td>
             </tr>
             <tr>
                 <td><img src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?w=80" width="80" alt="Huevo"></td>
                 <td><b>Huevo Blanco</b><br><small>Cartera de 30 pzas</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$82.00</td>
-                <td><button class="btn-comprar">Comprar</button></td>
             </tr>
             <tr>
                 <td><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=80" width="80" alt="Arroz"></td>
                 <td><b>Arroz Súper Extra</b><br><small>Bolsa de 1 Kilo</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$28.00</td>
-                <td><button class="btn-comprar">Comprar</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=80" width="80" alt="Manzana"></td>
+                <td><b>Manzana Roja</b><br><small>Por Kilo</small></td>
+                <td style="color: #FF4081; font-weight: bold;">$42.00</td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=80" width="80" alt="Aguacate"></td>
+                <td><b>Aguacate Hass</b><br><small>Por Kilo</small></td>
+                <td style="color: #FF4081; font-weight: bold;">$65.00</td>
             </tr>
         </tbody>
     </table>
 
-    <p style="background-color: #FF4081; color: white; padding: 15px; margin-top: 40px; margin-bottom: 0;
+    <h2>PUBLICIDAD EXCLUSIVA</h2>
+    <div class="publicidad-fotos">
+        <img src="44.png" alt="Publicidad 1">
+        <img src="5.png" alt="Publicidad 2">
+    </div>
+
+    <p style="background-color: #FF4081; color: white; padding: 15px; margin-top: 40px; margin-bottom: 0;">
+        &copy; 2026 Catálogo de Supermercado - Proyecto de Preparatoria.
     </p>
 
 </body>
