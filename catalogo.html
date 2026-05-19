@@ -4,63 +4,61 @@
     <meta charset="utf-8">
     <title>Productos - Catálogo</title>
     <style>
+        /* Estilo muy sencillo de preparatoria en rosa y amarillo */
         body {
             font-family: Arial, sans-serif;
             background-color: #FFF9E6; /* Fondo amarillo claro */
             margin: 0;
             text-align: center;
         }
-        h1, h2 {
-            color: #FF4081;
+        h1 {
+            color: #FF4081; /* Título color rosa */
+            margin-top: 20px;
         }
+        /* Menú unificado */
         nav {
-            background-color: #FF4081;
+            background-color: #FF4081; /* Barra color rosa */
             padding: 15px;
         }
         nav a {
-            color: #FFFFFF;
+            color: #FFFFFF; /* Letras blancas */
             font-weight: bold;
             text-decoration: none;
             margin: 0 10px;
         }
         nav a:hover {
-            color: #FFF176;
+            color: #FFF176; /* Cambia a amarillo al pasar el ratón */
         }
-        /* REQUISITO: Estilo de tabla muy simple */
+        /* REQUISITO: Tabla clásica de artículos */
         table {
-            width: 80%;
-            margin: 20px auto;
+            width: 85%;
+            margin: 30px auto;
             border-collapse: collapse;
-            background-color: #FFFFFF;
+            background-color: #FFFFFF; /* Fondo blanco para leer bien */
         }
         th {
-            background-color: #FF4081;
+            background-color: #FF4081; /* Encabezado rosa */
             color: white;
-            padding: 10px;
+            padding: 12px;
         }
         td {
+            border: 1px solid #FF4081; /* Bordes rosas */
+            padding: 12px;
+            vertical-align: middle;
+        }
+        /* Botón simple de compra */
+        .btn-comprar {
+            background-color: #FFF176; /* Fondo amarillo */
+            color: #333;
+            font-weight: bold;
             border: 1px solid #FF4081;
-            padding: 10px;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 4px;
         }
-        /* Cuadros para las 2 publicidades requeridas */
-        .caja-publicidad1 {
-            background-color: #FFF176;
-            border: 2px dashed #FF4081;
-            display: inline-block;
-            width: 40%;
-            margin: 10px;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-        .caja-publicidad2 {
+        .btn-comprar:hover {
             background-color: #FF4081;
             color: white;
-            border: 2px dashed #FFF176;
-            display: inline-block;
-            width: 40%;
-            margin: 10px;
-            padding: 15px;
-            box-sizing: border-box;
         }
     </style>
 </head>
@@ -88,33 +86,44 @@
         <tbody>
             <tr>
                 <td><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=80" width="80" alt="Tomate"></td>
-                <td><b>Tomate Bola</b><br>Por Kilo</td>
+                <td><b>Tomate Bola</b><br><small>Por Kilo</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$35.00</td>
-                <td><button style="background-color: #FFF176; border: 1px solid #FF4081; cursor: pointer;">Comprar</button></td>
+                <td><button class="btn-comprar">Comprar</button></td>
             </tr>
             <tr>
                 <td><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=80" width="80" alt="Leche"></td>
-                <td><b>Leche Litro</b><br>Envase 1L</td>
+                <td><b>Leche Litro</b><br><small>Envase 1L</small></td>
                 <td style="color: #FF4081; font-weight: bold;">$24.00</td>
-                <td><button style="background-color: #FFF176; border: 1px solid #FF4081; cursor: pointer;">Comprar</button></td>
+                <td><button class="btn-comprar">Comprar</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8c5d8?w=80" width="80" alt="Plátano"></td>
+                <td><b>Plátano Tabasco</b><br><small>Por Kilo</small></td>
+                <td style="color: #FF4081; font-weight: bold;">$22.50</td>
+                <td><button class="btn-comprar">Comprar</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=80" width="80" alt="Pan"></td>
+                <td><b>Pan de Caja</b><br><small>Paquete Grande</small></td>
+                <td style="color: #FF4081; font-weight: bold;">$45.00</td>
+                <td><button class="btn-comprar">Comprar</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?w=80" width="80" alt="Huevo"></td>
+                <td><b>Huevo Blanco</b><br><small>Cartera de 30 pzas</small></td>
+                <td style="color: #FF4081; font-weight: bold;">$82.00</td>
+                <td><button class="btn-comprar">Comprar</button></td>
+            </tr>
+            <tr>
+                <td><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=80" width="80" alt="Arroz"></td>
+                <td><b>Arroz Súper Extra</b><br><small>Bolsa de 1 Kilo</small></td>
+                <td style="color: #FF4081; font-weight: bold;">$28.00</td>
+                <td><button class="btn-comprar">Comprar</button></td>
             </tr>
         </tbody>
     </table>
 
-    <h2>PROMOCIONES EXCLUSIVAS</h2>
-    
-    <div class="caja-publicidad1">
-        <h3>ANUNCIO PUBLICITARIO 1</h3>
-        <p>¡Llegó el pan dulce calientito! Compra uno y llévate el segundo a mitad de precio de 6 PM a 8 PM.</p>
-    </div>
-
-    <div class="caja-publicidad2">
-        <h3>ANUNCIO PUBLICITARIO 2</h3>
-        <p>¡Saca tu tarjeta de cliente Full Market! Acumula el 5% en puntos de todas tus compras escolares.</p>
-    </div>
-
-    <p style="background-color: #FF4081; color: white; padding: 10px; margin-top: 30px; margin-bottom: 0;">
-        &copy; 2026 Catálogo Escolar.
+    <p style="background-color: #FF4081; color: white; padding: 15px; margin-top: 40px; margin-bottom: 0;
     </p>
 
 </body>
