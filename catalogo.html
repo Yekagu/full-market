@@ -4,18 +4,30 @@
     <meta charset="utf-8">
     <title>Productos - Catálogo</title>
     <style>
-        background-image: url(44.png);
-        /* Estilo básico de preparatoria en rosa y amarillo */
+        /* Estilo básico de preparatoria con colores rosa, amarillo y fondo 44.png */
         body {
             font-family: Arial, sans-serif;
-            background-color: #FFF9E6; /* Fondo amarillo claro */
+            background-image: url("44.png"); /* Imagen 44.png configurada como fondo de pantalla */
+            background-attachment: fixed;   /* Hace que el fondo se quede quieto al bajar */
+            background-size: cover;          /* Ajusta la imagen al tamaño de la pantalla */
             margin: 0;
             text-align: center;
         }
+        
+        /* Cuadro blanco con borde rosa para que resalten los títulos sobre el fondo */
+        .contenedor-titulo {
+            background-color: #FFFFFF;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+        }
         h1, h2 {
             color: #FF4081; /* Títulos color rosa */
-            margin-top: 20px;
+            margin: 0;
         }
+        
         /* Menú unificado */
         nav {
             background-color: #FF4081; /* Barra color rosa */
@@ -30,12 +42,14 @@
         nav a:hover {
             color: #FFF176; /* Cambia a amarillo al pasar el ratón */
         }
-        /* REQUISITO: Tabla clásica sin columna de acción */
+        
+        /* REQUISITO: Tabla clásica con fondo blanco para leer bien sobre tu imagen */
         table {
             width: 75%;
             margin: 30px auto;
             border-collapse: collapse;
             background-color: #FFFFFF; /* Fondo blanco */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Sombra suave para que resalte */
         }
         th {
             background-color: #FF4081; /* Encabezado rosa */
@@ -47,16 +61,22 @@
             padding: 12px;
             vertical-align: middle;
         }
-        /* Contenedor para las fotos de publicidad */
-        .publicidad-fotos {
-            margin: 30px auto;
-        }
-        .publicidad-fotos img {
+        
+        /* Contenedor blanco para la publicidad de abajo */
+        .seccion-publicidad {
+            background-color: #FFFFFF;
+            width: 50%;
+            margin: 20px auto 40px auto;
+            padding: 15px;
             border: 3px solid #FF4081;
             border-radius: 8px;
-            margin: 10px;
-            max-width: 300px;
+        }
+        .seccion-publicidad img {
+            border: 2px solid #FF4081;
+            border-radius: 6px;
+            max-width: 250px;
             height: auto;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -70,7 +90,9 @@
         <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
-    <h1>NUESTRO CATÁLOGO DE PRODUCTOS</h1>
+    <div class="contenedor-titulo">
+        <h1>NUESTRO CATÁLOGO DE PRODUCTOS</h1>
+    </div>
 
     <table>
         <thead>
@@ -119,6 +141,14 @@
         </tbody>
     </table>
 
+    <div class="seccion-publicidad">
+        <h2>PUBLICIDAD EXCLUSIVA</h2>
+        <img src="5.png" alt="Publicidad 2">
+    </div>
+
+    <p style="background-color: #FF4081; color: white; padding: 15px; margin-top: 40px; margin-bottom: 0;">
+        &copy; 2026 Catálogo de Supermercado - Proyecto de Preparatoria.
+    </p>
 
 </body>
 </html>
