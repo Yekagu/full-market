@@ -2,74 +2,96 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Inicio - Mi Súper</title>
+    <title>Inicio - Full Market</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #333;
-    background-color: #BCCDDB;
-}
-        
-        /* Menú básico */
-        nav { background: #fff; padding: 15px; border-bottom: 1px solid #ddd; }
-        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; font-size: 14px; }
-
-        /* Banner con foto */
-        .banner { 
-            background: image(<img src="file:///D|/BANNER.png" width="1280" height="800" alt=""/>)
-
-            background-size: cover;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 4px #000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+            background-color: #BCCDDB;
         }
-        .banner h1 { font-size: 40px; }
-
-        /* Contenido sencillo */
-        .bienvenida { padding: 40px 20px; max-width: 600px; margin: 0 auto; }
         
-        .botones-acceso { display: flex; justify-content: center; gap: 20px; padding-bottom: 50px; }
-        .boton { 
-            border: 1px solid #333; 
-            padding: 15px 25px; 
+        /* Menú de navegación unificado */
+        nav { 
+            background: #ffffff; 
+            padding: 15px; 
+            border-bottom: 2px solid #333; 
+        }
+        nav a { 
+            margin: 0 15px; 
             text-decoration: none; 
             color: #333; 
-            font-weight: bold;
-            border-radius: 4px;
+            font-weight: bold; 
+            font-size: 14px; 
         }
-        .boton:hover { background: #333; color: #fff; }
+        nav a:hover {
+            color: #27ae60;
+        }
 
-        footer { background: #f9f9f9; padding: 20px; font-size: 12px; border-top: 1px solid #eee; }
+        .bienvenida { 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo para los videos o elementos multimedia */
+        .multimedia {
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        
+        footer { 
+            background: #333; 
+            color: white;
+            padding: 20px; 
+            font-size: 12px; 
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
-<img src="Mesa de trabajo 1.jpg" width="1280" height="800" alt=""/>
+
+    <img src="Mesa de trabajo 1.jpg" width="100%" style="max-width:1280px; height:auto;" alt="Banner principal gato"/>
 
     <nav>
         <a href="index.html">INICIO</a>
         <a href="catalogo.html">PRODUCTOS</a>
         <a href="oferta.html">OFERTAS</a>
         <a href="contacto.html">CONTACTO</a>
-		<a href="nosotros.html">NOSOTROS</a>
-        <a href="ubicacion.html">UBICACION</a>
-		
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
-<div class="bienvenida">
-    <h2>FULL MARKET&nbsp;</h2>
-    <h2>Bienvenido :)</h2>
-<p>Encuentra los mejores productos frescos y abarrotes con entrega a domicilio.</p>
-</div>
 
-    <div class="botones-acceso"> </div>
+    <marquee bgcolor="#27ae60" style="color: white; padding: 10px; font-weight: bold;">
+        ¡Aprovecha nuestras ofertas de la semana! Envíos gratis en compras mayores a $500 pesos.
+    </marquee>
+
+    <div class="bienvenida">
+        <h2>FULL MARKET</h2>
+        <h3>Bienvenido :)</h3>
+        <p>Encuentra los mejores productos frescos y abarrotes con entrega a domicilio directamente en Ciudad Juárez.</p>
+        
+        <p><strong>Escucha nuestra música ambiental mientras navegas:</strong></p>
+        <audio src="musica.mp3" controls autoplay loop>
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <div class="multimedia">
+        <h3>Conoce más sobre nuestros productos frescos</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3wPIn_9V_68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
     <footer>
-        &copy; 2026 Mi Supermercado S.A. de C.V.
+        &copy; 2026 Mi Supermercado S.A. de C.V. - Proyecto Escolar de Preparatoria.
     </footer>
 
 </body>
