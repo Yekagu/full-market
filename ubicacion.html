@@ -2,75 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Ubicación - Mi Súper</title>
+    <title>Ubicación - Full Market</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    text-align: center;
-    color: #333;
-    background-image: url(file:///E|/no%20lo%20e%20usado!!.jpg);
-}
-        
-        /* Menú básico */
-        nav { background: #eee; padding: 10px; border-bottom: 1px solid #ccc; }
-        nav a { margin: 0 10px; text-decoration: none; color: #000; font-size: 14px; font-weight: bold; }
-
-        /* Banner de ubicación */
-        .banner-mapa { 
-            background: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800') center;
-            background-size: cover;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 2px 2px 5px #000;
+            font-family: Arial, sans-serif;
+            background-color: #FFF9E6;
+            margin: 0;
+            text-align: center;
         }
-
-        /* Información concreta */
-        .info-ubicacion { padding: 40px 20px; }
-        .dato { margin-bottom: 20px; }
-        .dato h3 { color: #2; margin-bottom: 5px; }
-        
-        footer { background: #f4f4f4; padding: 15px; font-size: 12px; border-top: 1px solid #ddd; }
+        h1, h3 {
+            color: #FF4081;
+        }
+        nav {
+            background-color: #FF4081;
+            padding: 15px;
+        }
+        nav a {
+            color: #FFFFFF;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #FFF176;
+        }
+        .cuadro-mapa {
+            background-color: white;
+            border: 2px solid #FF4081;
+            width: 70%;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
 
     <nav>
-       <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="oferta.html">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-		<a href="nosotros.html">NOSOTROS</a>
-        <a href="ubicacion.html">UBICACION</a>
+        <a href="index.html">INICIO</a> | 
+        <a href="catalogo.html">PRODUCTOS</a> | 
+        <a href="contacto.html">CONTACTO</a> | 
+        <a href="nosotros.html">NOSOTROS</a> | 
+        <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
- 
-<h1>DONDE ESTAMOS</h1>
-   
+    <h1>¿DÓNDE ESTAMOS UBICADOS?</h1>
 
-    <div class="info-ubicacion">
-        <div class="dato">
-            <h3><em>Dirección</em></h3>
-          <p>Av. Principal #123, Colonia Centro<br>Monterrey, Nuevo León, México</p>
-        </div>
+    <div class="cuadro-mapa">
+        <h3>Dirección de la Tienda:</h3>
+        <p>Av. Principal #123, Colonia Centro<br>Ciudad Juárez, Chihuahua, México</p>
 
-        <div class="dato">
-            <h3>Horarios</h3>
-            <p>Lunes a Sábado: 7:00 AM - 10:00 PM<br>Domingos: 8:00 AM - 8:00 PM</p>
-        </div>
+        <h3 style="margin-top: 20px;">Horarios de Atención:</h3>
+        <p>Lunes a Sábado: 7:00 AM - 10:00 PM<br>Domingos: 8:00 AM - 8:00 PM</p>
 
-        <div class="dato">
-            <h3>Teléfono</h3>
-            <p>+52 (81) 1234-5678</p>
-        </div>
+        <h3 style="margin-top: 20px;">Contacto Directo:</h3>
+        <p>Teléfono: +52 (656) 123-4567</p>
     </div>
 
-    <footer>
-        &copy; 2026 Mi Supermercado - ¡Te esperamos pronto!
-    </footer>
+    <p style="background-color: #FF4081; color: white; padding: 15px; margin-bottom: 0; position: fixed; bottom: 0; width: 100%;">
+        &copy; 2026 Full Market - ¡Te esperamos pronto!
+    </p>
 
 </body>
 </html>
