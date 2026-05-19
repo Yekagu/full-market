@@ -2,35 +2,21 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Productos - Catálogo</title>
+    <title>Contacto - Full Market</title>
     <style>
-        /* Estilo básico de preparatoria con colores rosa, amarillo y fondo 44.png */
+        /* Estilo básico de preparatoria con colores rosa, amarillo y fondo 55.png */
         body {
             font-family: Arial, sans-serif;
-            background-image: url(5.png); /* Imagen 44.png configurada como fondo de pantalla */
+            background-image: url("55.png"); /* Imagen 55.png configurada como fondo de pantalla */
             background-attachment: fixed;   /* Hace que el fondo se quede quieto al bajar */
             background-size: cover;          /* Ajusta la imagen al tamaño de la pantalla */
             margin: 0;
             text-align: center;
         }
-        
-        /* Cuadro blanco con borde rosa para que resalten los títulos sobre el fondo */
-        .contenedor-titulo {
-            background-color: #FFFFFF;
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 30px;
-            border: 3px solid #FF4081;
-            border-radius: 8px;
-        }
-        h1, h2 {
-            color: #FF4081; /* Títulos color rosa */
-            margin: 0;
-        }
-        
-        /* Menú unificado */
+
+        /* Barra de navegación unificada en color Rosa */
         nav {
-            background-color: #FF4081; /* Barra color rosa */
+            background-color: #FF4081;
             padding: 15px;
         }
         nav a {
@@ -40,43 +26,83 @@
             margin: 0 10px;
         }
         nav a:hover {
-            color: #FFF176; /* Cambia a amarillo al pasar el ratón */
+            color: #FFF176; /* Cambia a amarillo claro al pasar el ratón */
         }
-        
-        /* REQUISITO: Tabla clásica con fondo blanco para leer bien sobre tu imagen */
-        table {
-            width: 75%;
-            margin: 30px auto;
-            border-collapse: collapse;
-            background-color: #FFFFFF; /* Fondo blanco */
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Sombra suave para que resalte */
-        }
-        th {
-            background-color: #FF4081; /* Encabezado rosa */
-            color: white;
-            padding: 12px;
-        }
-        td {
-            border: 1px solid #FF4081; /* Bordes rosas */
-            padding: 12px;
-            vertical-align: middle;
-        }
-        
-        /* Contenedor blanco para la publicidad de abajo */
-        .seccion-publicidad {
+
+        /* Cuadro blanco con borde rosa para que resalten los títulos sobre el fondo */
+        .contenedor-titulo {
             background-color: #FFFFFF;
-            width: 50%;
-            margin: 20px auto 40px auto;
-            padding: 15px;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
             border: 3px solid #FF4081;
             border-radius: 8px;
         }
-        .seccion-publicidad img {
-            border: 2px solid #FF4081;
+        h1, h2, h3 {
+            color: #FF4081; /* Títulos color rosa */
+            margin: 0;
+        }
+
+        /* Contenedor blanco para el formulario y datos de contacto */
+        .cuadro-blanco {
+            background-color: rgba(255, 255, 255, 0.95); /* Blanco limpio para leer bien */
+            width: 80%;
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 25px;
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+            text-align: left; /* Alinea el texto a la izquierda dentro del cuadro */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* REQUISITO: Formulario Escolar */
+        form {
+            margin-top: 20px;
+            background-color: #FFFDE7; /* Fondo amarillo muy claro para el form */
+            padding: 15px;
+            border: 1px solid #FF4081;
             border-radius: 6px;
-            max-width: 250px;
-            height: auto;
-            margin-top: 10px;
+        }
+        .campo-form {
+            margin-bottom: 15px;
+        }
+        .campo-form label {
+            display: block;
+            font-weight: bold;
+            color: #FF4081;
+            margin-bottom: 5px;
+        }
+        .campo-form input, .campo-form textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #FF4081;
+            border-radius: 4px;
+        }
+        .btn-enviar {
+            background-color: #FFF176; /* Fondo amarillo */
+            color: #333;
+            font-weight: bold;
+            border: 2px solid #FF4081;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-enviar:hover {
+            background-color: #FF4081;
+            color: white;
+        }
+        
+        footer {
+            background-color: #FF4081;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+            margin-bottom: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -91,55 +117,50 @@
     </nav>
 
     <div class="contenedor-titulo">
-        <h1>NUESTRO CATÁLOGO DE PRODUCTOS</h1>
+        <h1>¡CONTÁCTANOS!</h1>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Imagen</th>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=80" width="80" alt="Tomate"></td>
-                <td><b>Tomate Bola</b><br><small>Por Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$35.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=80" width="80" alt="Leche"></td>
-                <td><b>Leche Litro</b><br><small>Envase 1L</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$24.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=80" width="80" alt="Pan"></td>
-                <td><b>Pan de Caja</b><br><small>Paquete Grande</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$45.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?w=80" width="80" alt="Huevo"></td>
-                <td><b>Huevo Blanco</b><br><small>Cartera de 30 pzas</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$82.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=80" width="80" alt="Arroz"></td>
-                <td><b>Arroz Súper Extra</b><br><small>Bolsa de 1 Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$28.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=80" width="80" alt="Manzana"></td>
-                <td><b>Manzana Roja</b><br><small>Por Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$42.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=80" width="80" alt="Aguacate"></td>
-                <td><b>Aguacate Hass</b><br><small>Por Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$65.00</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="cuadro-blanco">
+        <h3>Nuestros Datos</h3>
+        <p><b>Dirección:</b> Calle Falsa 123, Colonia Centro, Ciudad Juárez.</p>
+        <p><b>Teléfono:</b> 656-123-45-67</p>
+        <p><b>Horario:</b> Lunes a Sábado de 8:00 AM a 9:00 PM.</p>
+    </div>
+
+    <div class="cuadro-blanco">
+        <form action="#" method="post">
+            <h3 style="text-align: center; margin-top: 0;">Envíanos un Mensaje</h3>
+            
+            <div class="campo-form">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="mensaje">Mensaje / Sugerencia:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Cómo te podemos ayudar?" required></textarea>
+            </div>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Enviar Datos" class="btn-enviar">
+            </div>
+        </form>
+    </div>
+
+    <p><img src="fruits-and-vegetables-in-spanish.jpg" width="90%" style="max-width:500px; height:auto; border-radius: 8px;" alt="Frutas"/></p>
+
+    <br>
+    <a href="index.html" style="color: #FF4081; font-weight: bold; text-decoration: none; background-color: white; padding: 5px 10px; border-radius: 4px;">&larr; Volver al inicio</a>
+    <br><br><br><br>
+
+    <footer>
+        &copy; 2026 Contacto Full Market - Proyecto Escolar.
+    </footer>
 
 </body>
 </html>
