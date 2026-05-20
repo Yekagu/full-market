@@ -4,57 +4,84 @@
     <meta charset="utf-8">
     <title>Contacto - Full Market</title>
     <style>
+        /* Estilo básico de preparatoria con colores rosa, amarillo y fondo 55.png */
         body {
             font-family: Arial, sans-serif;
-            background-color: #FFF9E6; /* Amarillo claro */
+            background-image: url("55.png"); /* Imagen 55.png configurada como fondo de pantalla */
+            background-attachment: fixed;   /* Hace que el fondo se quede quieto al bajar */
+            background-size: cover;          /* Ajusta la imagen al tamaño de la pantalla */
             margin: 0;
             text-align: center;
         }
-        h1, h3 {
-            color: #FF4081; /* Rosa */
-        }
+
+        /* Barra de navegación unificada en color Rosa */
         nav {
             background-color: #FF4081;
             padding: 15px;
         }
         nav a {
-            color: #FFFFFF;
+            color: #FFFFFF; /* Letras blancas */
             font-weight: bold;
             text-decoration: none;
             margin: 0 10px;
         }
         nav a:hover {
-            color: #FFF176;
+            color: #FFF176; /* Cambia a amarillo claro al pasar el ratón */
         }
-        .cuadro-contacto {
-            background-color: white;
-            border: 2px solid #FF4081;
-            width: 70%;
-            max-width: 500px;
-            margin: 30px auto;
-            padding: 20px;
+
+        /* Cuadro blanco con borde rosa para que resalten los títulos sobre el fondo */
+        .contenedor-titulo {
+            background-color: #FFFFFF;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            border: 3px solid #FF4081;
             border-radius: 8px;
-            text-align: left;
         }
-        /* REQUISITO: Formulario de nivel preparatoria */
-        .campo {
+        h1, h2, h3 {
+            color: #FF4081; /* Títulos color rosa */
+            margin: 0;
+        }
+
+        /* Contenedor blanco para el formulario y datos de contacto */
+        .cuadro-blanco {
+            background-color: rgba(255, 255, 255, 0.95); /* Blanco limpio para leer bien */
+            width: 80%;
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 25px;
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+            text-align: left; /* Alinea el texto a la izquierda dentro del cuadro */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* REQUISITO: Formulario Escolar */
+        form {
+            margin-top: 20px;
+            background-color: #FFFDE7; /* Fondo amarillo muy claro para el form */
+            padding: 15px;
+            border: 1px solid #FF4081;
+            border-radius: 6px;
+        }
+        .campo-form {
             margin-bottom: 15px;
         }
-        .campo label {
+        .campo-form label {
             display: block;
             font-weight: bold;
             color: #FF4081;
             margin-bottom: 5px;
         }
-        .campo input, .campo textarea {
+        .campo-form input, .campo-form textarea {
             width: 100%;
             padding: 8px;
+            box-sizing: border-box;
             border: 1px solid #FF4081;
             border-radius: 4px;
-            box-sizing: border-box;
         }
-        .boton-enviar {
-            background-color: #FFF176;
+        .btn-enviar {
+            background-color: #FFF176; /* Fondo amarillo */
             color: #333;
             font-weight: bold;
             border: 2px solid #FF4081;
@@ -62,9 +89,20 @@
             cursor: pointer;
             border-radius: 4px;
         }
-        .boton-enviar:hover {
+        .btn-enviar:hover {
             background-color: #FF4081;
             color: white;
+        }
+        
+        footer {
+            background-color: #FF4081;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+            margin-bottom: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -78,34 +116,38 @@
         <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
-    <h1>PÁGINA DE CONTACTO</h1>
+    <div class="contenedor-titulo">
+        <h1>¡CONTÁCTANOS!</h1>
+    </div>
 
-    <div class="cuadro-contacto">
-        <h3>Nuestros Datos:</h3>
+    <div class="cuadro-blanco">
+        <h3>Nuestros Datos</h3>
         <p><b>Dirección:</b> Calle Falsa 123, Colonia Centro, Ciudad Juárez.</p>
         <p><b>Teléfono:</b> 656-123-45-67</p>
         <p><b>Horario:</b> Lunes a Sábado de 8:00 AM a 9:00 PM.</p>
+    </div>
 
-        <form action="#" method="post" style="margin-top: 20px; background-color: #FFFDE7; padding: 15px; border-radius: 6px;">
-            <h3 style="text-align: center; margin-top: 0;">Déjanos un Mensaje</h3>
+    <div class="cuadro-blanco">
+        <form action="#" method="post">
+            <h3 style="text-align: center; margin-top: 0;">Envíanos un Mensaje</h3>
             
-            <div class="campo">
-                <label>Nombre Completo:</label>
-                <input type="text" placeholder="Escribe tu nombre aquí" required>
+            <div class="campo-form">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
             </div>
 
-            <div class="campo">
-                <label>Correo Electrónico:</label>
-                <input type="email" placeholder="correo@ejemplo.com" required>
+            <div class="campo-form">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
             </div>
 
-            <div class="campo">
-                <label>Tu Comentario / Sugerencia:</label>
-                <textarea rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+            <div class="campo-form">
+                <label for="mensaje">Mensaje / Sugerencia:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Cómo te podemos ayudar?" required></textarea>
             </div>
 
             <div style="text-align: center;">
-                <input type="submit" value="Enviar Formulario" class="boton-enviar">
+                <input type="submit" value="Enviar Datos" class="btn-enviar">
             </div>
         </form>
     </div>
@@ -113,8 +155,12 @@
     <p><img src="fruits-and-vegetables-in-spanish.jpg" width="90%" style="max-width:500px; height:auto; border-radius: 8px;" alt="Frutas"/></p>
 
     <br>
-    <a href="index.html" style="color: #FF4081; font-weight: bold;">&larr; Volver a la página principal</a>
-    <br><br>
+    <a href="index.html" style="color: #FF4081; font-weight: bold; text-decoration: none; background-color: white; padding: 5px 10px; border-radius: 4px;">&larr; Volver al inicio</a>
+    <br><br><br><br>
+
+    <footer>
+        &copy; 2026 Contacto Full Market - Proyecto Escolar.
+    </footer>
 
 </body>
 </html>
