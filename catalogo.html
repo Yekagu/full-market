@@ -28,7 +28,7 @@
             margin: 0;
         }
         
-        /* Menú unificado */
+        /* Menú unificado con OFERTAS incluido */
         nav {
             background-color: #FF4081; /* Barra color rosa */
             padding: 15px;
@@ -40,43 +40,44 @@
             margin: 0 10px;
         }
         nav a:hover {
-            color: #FFF176; /* Cambia a amarillo al pasar el ratón */
+            color: #FFF176; /* Al pasar el ratón cambia a amarillo claro */
         }
         
-        /* REQUISITO: Tabla clásica con fondo blanco para leer bien sobre tu imagen */
-        table {
-            width: 75%;
+        /* Contenedor blanco con transparencia para la tabla de productos */
+        .cuadro-tabla {
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 90%;
+            max-width: 800px;
             margin: 30px auto;
+            padding: 20px;
+            border: 3px solid #FF4081;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        /* REQUISITO: Estilo de Tabla Escolarizada */
+        .tabla-productos {
+            width: 100%;
             border-collapse: collapse;
-            background-color: #FFFFFF; /* Fondo blanco */
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Sombra suave para que resalte */
+            margin-top: 15px;
         }
-        th {
-            background-color: #FF4081; /* Encabezado rosa */
-            color: white;
+        .tabla-productos th {
+            background-color: #FFF176; /* Encabezado amarillo */
+            color: #333;
             padding: 12px;
+            border: 2px solid #FF4081;
         }
-        td {
-            border: 1px solid #FF4081; /* Bordes rosas */
+        .tabla-productos td {
             padding: 12px;
+            border: 1px solid #FF4081;
             vertical-align: middle;
         }
         
-        /* Contenedor blanco para la publicidad de abajo */
-        .seccion-publicidad {
-            background-color: #FFFFFF;
-            width: 50%;
-            margin: 20px auto 40px auto;
-            padding: 15px;
-            border: 3px solid #FF4081;
-            border-radius: 8px;
-        }
-        .seccion-publicidad img {
-            border: 2px solid #FF4081;
-            border-radius: 6px;
-            max-width: 250px;
-            height: auto;
-            margin-top: 10px;
+        /* Ajuste para que las imágenes se vean uniformes y cuadren */
+        .tabla-productos img {
+            border-radius: 4px;
+            border: 1px solid #FF4081;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -85,62 +86,63 @@
     <nav>
         <a href="index.html">INICIO</a> | 
         <a href="catalogo.html">PRODUCTOS</a> | 
+        <a href="oferta.html">OFERTAS</a> | 
         <a href="contacto.html">CONTACTO</a> | 
         <a href="nosotros.html">NOSOTROS</a> | 
         <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
     <div class="contenedor-titulo">
-        <h1>NUESTRO CATÁLOGO DE PRODUCTOS</h1>
+        <h1>NUESTRO CATÁLOGO</h1>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Imagen</th>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=80" width="80" alt="Tomate"></td>
-                <td><b>Tomate Bola</b><br><small>Por Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$35.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=80" width="80" alt="Leche"></td>
-                <td><b>Leche Litro</b><br><small>Envase 1L</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$24.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=80" width="80" alt="Pan"></td>
-                <td><b>Pan de Caja</b><br><small>Paquete Grande</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$45.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1596438459194-f275f413d6ff?w=80" width="80" alt="Huevo"></td>
-                <td><b>Huevo Blanco</b><br><small>Cartera de 30 pzas</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$82.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=80" width="80" alt="Arroz"></td>
-                <td><b>Arroz Súper Extra</b><br><small>Bolsa de 1 Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$28.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1546964124-0cce460f38ef?w=80" width="80" alt="Manzana"></td>
-                <td><b>Manzana Roja</b><br><small>Por Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$42.00</td>
-            </tr>
-            <tr>
-                <td><img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?w=80" width="80" alt="Aguacate"></td>
-                <td><b>Aguacate Hass</b><br><small>Por Kilo</small></td>
-                <td style="color: #FF4081; font-weight: bold;">$65.00</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <div class="cuadro-tabla">
+        <h2>Productos Disponibles</h2>
+        <table class="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1595855759920-86582396756a?w=80&h=80&fit=crop" width="80" height="80" alt="Tomate"></td>
+                    <td><b>Tomate Bola</b><br><small>Por kilo fresco</small></td>
+                    <td style="color: #FF4081; font-weight: bold;">$35.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=80&h=80&fit=crop" width="80" height="80" alt="Leche"></td>
+                    <td><b>Leche Litro</b><br><small>Envase 1L Pasteurizada</small></td>
+                    <td style="color: #FF4081; font-weight: bold;">$26.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=80&h=80&fit=crop" width="80" height="80" alt="Pan"></td>
+                    <td><b>Pan de Caja</b><br><small>Paquete Grande Ideal para Sándwich</small></td>
+                    <td style="color: #FF4081; font-weight: bold;">$45.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1516448620398-c5f44bf9f441?w=80&h=80&fit=crop" width="80" height="80" alt="Huevo"></td>
+                    <td><b>Huevo Blanco</b><br><small>Cartera de 30 piezas seleccionadas</small></td>
+                    <td style="color: #FF4081; font-weight: bold;">$82.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=80&h=80&fit=crop" width="80" height="80" alt="Arroz"></td>
+                    <td><b>Arroz Súper Extra</b><br><small>Bolsa de 1 Kilo de grano entero</small></td>
+                    <td style="color: #FF4081; font-weight: bold;">$28.00</td>
+                </tr>
+                <tr>
+                    <td><img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=80&h=80&fit=crop" width="80" height="80" alt="Manzana"></td>
+                    <td><b>Manzana Roja</b><br><small>Por Kilo deliciosa y dulce</small></td>
+                    <td style="color: #FF4081; font-weight: bold;">$38.00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br>
+        <a href="index.html" style="color: #FF4081; font-weight: bold; text-decoration: none;">&larr; Volver al inicio</a>
+    </div>
 
 </body>
 </html>
