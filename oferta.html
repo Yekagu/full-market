@@ -2,107 +2,157 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Ofertas - Mi Súper</title>
+    <title>Ofertas - Full Market</title>
     <style>
+        /* Estilo escolar básico en rosa y amarillo con tu fondo personalizado */
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    text-align: center;
-    color: #444;
-    background-image: url(44.png);
-}
+            font-family: Arial, sans-serif;
+            background-image: url("fondoooo.jpg"); /* Tu imagen de la USB como fondo */
+            background-attachment: fixed;         /* El fondo se queda quieto al deslizar */
+            background-size: cover;                /* Ajusta la imagen a toda la pantalla */
+            margin: 0;
+            text-align: center;
+            color: #333;
+        }
         
-        /* Menú */
-        nav { background: #f8f8f8; padding: 15px; border-bottom: 1px solid #ddd; }
-        nav a { color: #333; margin: 0 15px; text-decoration: none; }
-        nav a:hover { text-decoration: underline; }
-
-        /* Banner con foto modesto */
-        .banner { 
-            background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=800'); 
-            background-size: cover;
-            background-position: center;
-            height: 200px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center;
-            color: white;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+        /* Menú unificado en color rosa */
+        nav { 
+            background-color: #FF4081; 
+            padding: 15px; 
+        }
+        nav a { 
+            color: #FFFFFF; /* Letras blancas */
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        nav a:hover { 
+            color: #FFF176; /* Al pasar el mouse cambia a amarillo claro */
         }
 
-        /* Lista de ofertas */
-        .lista { padding: 30px; }
-        .producto-oferta { 
-            border-bottom: 1px solid #eee; 
-            padding: 15px; 
-            max-width: 500px; 
-            margin: 0 auto;
+        /* Contenedor del título con fondo blanco para resaltar */
+        .contenedor-titulo {
+            background-color: #FFFFFF;
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 30px;
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #FF4081;
+            margin: 0;
+        }
+
+        /* Contenedor principal de la lista de ofertas */
+        .lista { 
+            max-width: 600px; 
+            margin: 30px auto; 
+            padding: 10px;
+        }
+
+        /* Tarjetas de productos individuales con fondo blanco e indicador amarillo */
+        .producto-oferta {
+            background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco limpio */
+            border: 2px solid #FF4081; /* Borde rosa */
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
         }
-        .producto-oferta img { width: 60px; height: 60px; border-radius: 5px; }
-        
-        .precio-antes { color: #999; text-decoration: line-through; font-size: 14px; }
-        .precio-ahora { color: #c0392b; font-weight: bold; font-size: 18px; }
 
-        footer { padding: 20px; font-size: 12px; color: #888; border-top: 1px solid #eee; margin-top: 20px; }
-    body,td,th {
-    color: #000000;
-}
+        .producto-oferta img {
+            border-radius: 4px;
+            border: 1px solid #FF4081;
+        }
+
+        .info-producto {
+            text-align: left;
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+
+        /* Estilo para los precios */
+        .precio-antes {
+            text-decoration: line-through;
+            color: #777;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .precio-ahora {
+            color: #FF4081; /* Precio actual en rosa */
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Etiqueta amarilla de Oferta */
+        .etiqueta-oferta {
+            background-color: #FFF176; /* Fondo amarillo */
+            color: #333;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #FF4081;
+            border-radius: 4px;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="oferta.html">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-		<a href="nosotros.html">NOSOTROS</a>
-        <a href="ubicacion.html">UBICACION</a>
+        <a href="index.html">INICIO</a> | 
+        <a href="catalogo.html">PRODUCTOS</a> | 
+        <a href="contacto.html">CONTACTO</a> | 
+        <a href="nosotros.html">NOSOTROS</a> | 
+        <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
-   
-<h1>Ofertas de la Semana</h1>
-    
+    <div class="contenedor-titulo">
+        <h1>OFERTAS DE LA SEMANA</h1>
+    </div>
 
     <div class="lista">
         
         <div class="producto-oferta">
-            <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=100" alt="Manzana">
-            <div>
-                <strong>Manzana Roja</strong><br>
+            <img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=80" width="80" height="80" alt="Manzana">
+            <div class="info-producto">
+                <strong>Manzana Roja</strong><br><small>Por kilo</small><br>
                 <span class="precio-antes">$40.00</span> 
                 <span class="precio-ahora">$28.00</span>
             </div>
-            <button>Añadir</button>
-      </div>
+            <span class="etiqueta-oferta">¡30% MENOS!</span>
+        </div>
 
         <div class="producto-oferta">
-            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=100" alt="Leche">
-            <div>
-                <strong>Leche de Galón</strong><br>
+            <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=80" width="80" height="80" alt="Leche">
+            <div class="info-producto">
+                <strong>Leche de Galón</strong><br><small>Envase Familiar</small><br>
                 <span class="precio-antes">$30.00</span> 
                 <span class="precio-ahora">$22.00</span>
             </div>
-            <button>Añadir</button>
+            <span class="etiqueta-oferta">OFERTA</span>
         </div>
 
         <div class="producto-oferta">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=100" alt="Pan">
-            <div>
-                <strong>Pan de Caja</strong><br>
-                <span class="precio-antes">$45.00</span> 
-                <span class="precio-ahora">$35.00</span>
+            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=80" width="80" height="80" alt="Cereal">
+            <div class="info-producto">
+                <strong>Cereal de Hojuelas</strong><br><small>Caja Grande</small><br>
+                <span class="precio-antes">$65.00</span> 
+                <span class="precio-ahora">$49.90</span>
             </div>
-            <button>Añadir</button>
+            <span class="etiqueta-oferta">REBAJADO</span>
         </div>
 
-</div>
+    </div>
 
-    <footer>
-    &copy; 2026 Mi Supermercado </footer>
+    <p style="margin-top: 20px;">
+        <a href="index.html" style="color: #FF4081; font-weight: bold; text-decoration: none; background-color: white; padding: 6px 12px; border: 1px solid #FF4081; border-radius: 4px;">&larr; Volver al Inicio</a>
+    </p>
+
+    <br><br>
 
 </body>
 </html>
