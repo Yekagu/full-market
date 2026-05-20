@@ -4,36 +4,55 @@
     <meta charset="utf-8">
     <title>Nosotros - Full Market</title>
     <style>
+        /* Estilo básico de preparatoria con colores rosa, amarillo y tu fondo personalizado */
         body {
             font-family: Arial, sans-serif;
-            background-color: #FFF9E6;
+            background-image: url("fobdocontactos.jpg"); /* Tu imagen de la USB como fondo */
+            background-attachment: fixed;        /* El fondo se queda quieto al deslizar */
+            background-size: cover;               /* Ajusta la imagen a toda la pantalla */
             margin: 0;
             text-align: center;
         }
+        
+        /* Títulos color rosa */
         h1, h3 {
             color: #FF4081;
         }
+        
+        /* Menú unificado en color rosa */
         nav {
             background-color: #FF4081;
             padding: 15px;
         }
         nav a {
-            color: #FFFFFF;
+            color: #FFFFFF; /* Letras blancas */
             font-weight: bold;
             text-decoration: none;
             margin: 0 10px;
         }
         nav a:hover {
-            color: #FFF176;
+            color: #FFF176; /* Cambia a amarillo claro al pasar el mouse */
         }
+        
+        /* Cuadro blanco con transparencia y borde rosa para que resalten los textos */
         .cuadro-texto {
-            background-color: white;
-            border: 2px solid #FF4081;
+            background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco limpio */
+            border: 3px solid #FF4081;
             width: 75%;
-            margin: 25px auto;
+            max-width: 700px;
+            margin: 30px auto;
             padding: 20px;
             border-radius: 8px;
-            text-align: left;
+            text-align: left; /* Alinea los textos a la izquierda */
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        /* Estilo simple para las viñetas */
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
         }
     </style>
 </head>
@@ -47,12 +66,14 @@
         <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
-    <h1>SOBRE NOSOTROS</h1>
+    <h1 style="color: #FF4081; background-color: white; display: inline-block; padding: 10px 20px; margin-top: 20px; border: 2px solid #FF4081; border-radius: 6px;">SOBRE NOSOTROS</h1>
 
     <div class="cuadro-texto">
         <p>Somos un supermercado comprometido con ofrecer productos de calidad al mejor precio. En un supermercado, la gente valora la calidad y el origen de los productos.</p>
         
-        <p style="text-align: center;"><img src="kat.jpg" width="276" height="183" alt="Foto Equipo"/></p>
+        <p style="text-align: center;">
+            <img src="kat.jpg" width="276" height="183" style="border: 2px solid #FF4081; border-radius: 4px;" alt="Foto Equipo"/>
+        </p>
 
         <h3>Compromiso Social:</h3>
         <ul>
@@ -63,12 +84,14 @@
         <h3>Nuestros Valores:</h3>
         <ul>
             <li><b>Calidad:</b> Elegimos lo mejor para tu familia.</li>
-            <li><b>Servicio:</b> Te atendemos siempre de la mejor manera.</li>
+            <li><b>Servicio:</b> Te atendemos siempre de la mejor manera con una sonrisa.</li>
         </ul>
+        
+        <p style="text-align: center; margin-top: 25px;">
+            <a href="index.html" style="color: #FF4081; font-weight: bold; text-decoration: none;">&larr; Volver al inicio</a>
+        </p>
     </div>
 
-    <br>
-    <a href="index.html" style="color: #FF4081; font-weight: bold;">&larr; Volver al inicio</a>
     <br><br>
 
 </body>
