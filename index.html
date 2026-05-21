@@ -46,6 +46,21 @@
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
         }
+            /* Publicidad flotante en el lateral izquierdo */
+        .publicidad-izquierda {
+            position: fixed;
+            left: 20px;          /* Separación del borde izquierdo */
+            top: 250px;          /* Separación desde arriba (abajo de tu menú) */
+            width: 200px;        /* Ajusta el ancho para que quepa bien en el espacio */
+            z-index: 1000;       /* Asegura que quede por encima del fondo */
+        }
+        
+        .publicidad-izquierda img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* Sombra para que resalte */
+        }
     </style>
 </head>
 <body>
@@ -81,7 +96,11 @@
    
         <p><a href="https://cessarflores.github.io/Restaurante-Olas-Altas/"><img src="Publicidad empresa.jpg" width="90%" style="max-width:500px; height:auto; border-radius: 8px;" alt="Frutas"/></a></p>
 
-    
+        <div class="publicidad-izquierda"
+    <a href="https://angelgonzalezfav.github.io/yonke3hermanos/" target="_blank">
+        <img src="Publicidad yonke.jpg" alt="Publicidad Yonke 3 Hermanos"/>
+    </a>
+
 
 </body>
 </html>
