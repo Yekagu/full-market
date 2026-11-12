@@ -2,97 +2,87 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Inicio  Full Market</title>
+    <title>Inicio Full Market</title>
+
     <style>
+        /* Estilos de preparatoria con los colores rosa, amarillo y tu fondo 23.png */
         body {
             font-family: Arial, sans-serif;
+            background-image: url("23.png"); /* REQUISITO: Tu imagen de fondo de la USB */
+            background-attachment: fixed;   /* Hace que el fondo se quede fijo al bajar */
+            background-size: cover;          /* Ajusta la imagen a toda la pantalla */
             margin: 0;
             padding: 0;
             text-align: center;
-            color: #333;
-            background-color: #BCCDDB;
         }
         
-        /* Menú de navegación unificado */
-        nav { 
-            background: #ffffff; 
-            padding: 15px; 
-            border-bottom: 2px solid #333; 
+        /* Títulos en color Rosa */
+        h1, h2, h3 {
+            color: #FF4081; 
         }
-        nav a { 
-            margin: 0 15px; 
-            text-decoration: none; 
-            color: #333; 
-            font-weight: bold; 
-            font-size: 14px; 
+
+        /* Barra de navegación unificada en color Rosa */
+        nav {
+            background-color: #FF4081; 
+            padding: 15px;
+        }
+        nav a {
+            color: #FFFFFF; /* Letras blancas */
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
         }
         nav a:hover {
-            color: #27ae60;
+            color: #FFF176; /* Cambia a amarillo claro al pasar el mouse */
         }
 
-        .bienvenida { 
-            padding: 20px; 
-            max-width: 800px; 
-            margin: 20px auto; 
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Estilo para los videos o elementos multimedia */
-        .multimedia {
-            margin: 20px auto;
+        /* Cuadros blancos con borde rosa para que tu texto resalte sobre el fondo 23.png */
+        .cuadro-blanco {
+            background-color: rgba(255, 255, 255, 0.95); /* Blanco limpio para leer bien */
+            width: 80%;
+            max-width: 700px;
+            margin: 25px auto;
             padding: 20px;
-            background: #fff;
-            max-width: 600px;
-            border-radius: 8px;
+            border: 3px solid #FF4081;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
         }
         
-        footer { 
-            background: #333; 
-            color: white;
-            padding: 20px; 
-            font-size: 12px; 
-            margin-top: 40px;
-        }
     </style>
 </head>
 <body>
 
-    <img src="Mesa de trabajo 1.jpg" width="100%" style="max-width:1280px; height:auto;" alt="Banner principal gato"/>
+    <img src="Mesa de trabajo 1.jpg" width="100%" style="max-width:1000px; height:auto;" alt="Banner principal"/>
 
-    <nav>
-        <a href="index.html">INICIO</a>
-        <a href="catalogo.html">PRODUCTOS</a>
-        <a href="oferta.html">OFERTAS</a>
-        <a href="contacto.html">CONTACTO</a>
-        <a href="nosotros.html">NOSOTROS</a>
+   <nav>
+        <a href="index.html">INICIO</a> | 
+        <a href="catalogo.html">PRODUCTOS</a> | 
+        <a href="oferta.html">OFERTAS</a> | 
+        <a href="contacto.html">CONTACTO</a> | 
+        <a href="nosotros.html">NOSOTROS</a> | 
         <a href="ubicacion.html">UBICACIÓN</a>
     </nav>
 
-    <marquee bgcolor="#27ae60" style="color: white; padding: 10px; font-weight: bold;">
-        ¡Aprovecha nuestras ofertas de la semana! Envíos gratis en compras mayores a $500 pesos.
+    <marquee bgcolor="#FFF176" style="padding: 10px; font-weight: bold; color: #333; font-size: 15px;">
+        ¡Bienvenidos a Full Market! Los mejores productos frescos de Ciudad Juárez aquí.
     </marquee>
 
-    <div class="bienvenida">
+    <div class="cuadro-blanco">
         <h2>FULL MARKET</h2>
-        <h3>Bienvenido :)</h3>
-        <p>Encuentra los mejores productos frescos y abarrotes con entrega a domicilio directamente en Ciudad Juárez.</p>
+        <h3>Bienvenido a nuestra tienda virtual :)</h3>
+        <p>Encuentra los mejores productos y abarrotes con entrega a domicilio directamente en tu hogar.</p>
         
-        <p><strong>Escucha nuestra música ambiental mientras navegas:</strong></p>
-        <audio src="musica.mp3" controls autoplay loop>
-            Tu navegador no soporta el elemento de audio.
+        <p style="margin-top: 20px;"><b>Escucha nuestra música ambiental de fondo:</b></p>
+        <audio src="freesound_community-cottagecore-17463.mp3" controls autoplay loop>
+            Tu navegador no soporta este reproductor de audio.
         </audio>
     </div>
 
-    <div class="multimedia">
-        <h3>Conoce más sobre nuestros productos frescos</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3wPIn_9V_68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+   
+        <iframe width="100%" height="315" src="137247-766338227_medium.mp4" frameborder="0" style="max-width: 560px; border-radius: 6px;" allowfullscreen></iframe>
 
-    <footer>
-        &copy; 2026 Mi Supermercado S.A. de C.V. - Proyecto Escolar de Preparatoria.
-    </footer>
+        <p><a href="https://angelgonzalezfav.github.io/yonke3hermanos/"><img src="Publicidad yonke.jpg" alt="Frutas" width="15%" height="596" style="max-width:500px; height:auto; border-radius: 8px;"/></a><a href="https://cessarflores.github.io/Restaurante-Olas-Altas/"><img src="Publicidad empresa.jpg" alt="Frutas" width="78%" height="863" style="max-width:500px; height:auto; border-radius: 8px;"/></a></p>
+       
 
 </body>
 </html>

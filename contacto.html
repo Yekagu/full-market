@@ -2,42 +2,164 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Contacto</title>
-<style type="text/css">
-body {
-    background-image: url(fondoooo.jpg);
-    text-align: center;
-}
-</style>
-	<body>
+    <title>Contacto - Full Market</title>
+    <style>
+        /* Estilo básico de preparatoria con colores rosa, amarillo y fondo 55.png */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("55.png"); /* Imagen 55.png configurada como fondo de pantalla */
+            background-attachment: fixed;   /* Hace que el fondo se quede quieto al bajar */
+            background-size: cover;          /* Ajusta la imagen al tamaño de la pantalla */
+            margin: 0;
+            text-align: center;
+        }
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="oferta.html">Ofertas</a>
-        <a href="contacto.html">Contacto</a>
-		<a href="nosotros.html">NOSOTROS</a>
-        <a href="ubicacion.html">UBICACION</a>
-    </nav>
+        /* Barra de navegación unificada en color Rosa */
+        nav {
+            background-color: #FF4081;
+            padding: 15px;
+        }
+        nav a {
+            color: #FFFFFF; /* Letras blancas */
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            color: #FFF176; /* Cambia a amarillo claro al pasar el ratón */
+        }
 
+        /* Cuadro blanco con borde rosa para que resalten los títulos sobre el fondo */
+        .contenedor-titulo {
+            background-color: #FFFFFF;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            color: #FF4081; /* Títulos color rosa */
+            margin: 0;
+        }
+
+        /* Contenedor blanco para el formulario y datos de contacto */
+        .cuadro-blanco {
+            background-color: rgba(255, 255, 255, 0.95); /* Blanco limpio para leer bien */
+            width: 80%;
+            max-width: 600px;
+            margin: 25px auto;
+            padding: 25px;
+            border: 3px solid #FF4081;
+            border-radius: 8px;
+            text-align: left; /* Alinea el texto a la izquierda dentro del cuadro */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* REQUISITO: Formulario Escolar */
+        form {
+            margin-top: 20px;
+            background-color: #FFFDE7; /* Fondo amarillo muy claro para el form */
+            padding: 15px;
+            border: 1px solid #FF4081;
+            border-radius: 6px;
+        }
+        .campo-form {
+            margin-bottom: 15px;
+        }
+        .campo-form label {
+            display: block;
+            font-weight: bold;
+            color: #FF4081;
+            margin-bottom: 5px;
+        }
+        .campo-form input, .campo-form textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #FF4081;
+            border-radius: 4px;
+        }
+        .btn-enviar {
+            background-color: #FFF176; /* Fondo amarillo */
+            color: #333;
+            font-weight: bold;
+            border: 2px solid #FF4081;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn-enviar:hover {
+            background-color: #FF4081;
+            color: white;
+        }
+        
+        footer {
+            background-color: #FF4081;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+            margin-bottom: 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-<h1 style="text-align: center">Contacto</h1>
-<h3>Estamos felices de saber de ti. Sólo completa los campos y nos pondremos en contacto contigo</h3>
-<h3>Datos de Contacto:&nbsp;</h3>
-<p>Dirección: [Calle, 12345, Ciudad Juarez].&nbsp;</p>
-<p>Teléfono de Pedidos: [656-123-45-67].&nbsp;</p>
-<p>Correo de sugerencias: [ejemplo@supermercado.com].</p>
-<h3>&nbsp;Horarios Detallados:&nbsp;</h3>
-<p>Lunes a Sábado: 8:00 AM - 9:00 PM.&nbsp; Domingos y Festivos: 9:00 AM - 6:00 PM.</p>
-<h3>Redes Sociales:&nbsp;</h3>
-<p>Instagram:@Fullmarket123</p>
-<p>Facebook:Fularket456</p>
-<p>Donde publicaremos  muchas ofertas!!&nbsp;</p>
-<img src="fruits-and-vegetables-in-spanish.jpg" width="2000" height="200" alt=""/>
-<p>&nbsp;</p>
-<a href="index.html">Volver al inicio</a>
+    <nav>
+        <a href="index.html">INICIO</a> | 
+        <a href="catalogo.html">PRODUCTOS</a> | 
+        <a href="oferta.html">OFERTAS</a> | 
+        <a href="contacto.html">CONTACTO</a> | 
+        <a href="nosotros.html">NOSOTROS</a> | 
+        <a href="ubicacion.html">UBICACIÓN</a>
+    </nav>
+    
+    <div class="contenedor-titulo">
+        <h1>¡CONTÁCTANOS!</h1>
+    </div>
+
+    <div class="cuadro-blanco">
+        <h3>Nuestros Datos</h3>
+        <p><b>Dirección:</b> Calle Falsa 123, Colonia Centro, Ciudad Juárez.</p>
+        <p><b>Teléfono:</b> 656-123-45-67</p>
+        <p><b>Horario:</b> Lunes a Sábado de 8:00 AM a 9:00 PM.</p>
+    </div>
+
+    <div class="cuadro-blanco">
+        <form action="#" method="post">
+            <h3 style="text-align: center; margin-top: 0;">Envíanos un Mensaje</h3>
+            
+            <div class="campo-form">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo-form">
+                <label for="mensaje">Mensaje / Sugerencia:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Cómo te podemos ayudar?" required></textarea>
+            </div>
+
+            <div style="text-align: center;">
+                <input type="submit" value="Enviar Datos" class="btn-enviar">
+            </div>
+        </form>
+    </div>
+
+    <p><img src="fruits-and-vegetables-in-spanish.jpg" width="90%" style="max-width:500px; height:auto; border-radius: 8px;" alt="Frutas"/></p>
+
+    <br>
+    <a href="index.html" style="color: #FF4081; font-weight: bold; text-decoration: none; background-color: white; padding: 5px 10px; border-radius: 4px;">&larr; Volver al inicio</a>
+    <br><br><br><br>
+
+   
 
 </body>
 </html>
